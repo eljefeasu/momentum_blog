@@ -1,0 +1,13 @@
+<%= form_with(model: [ @article, @article.comments.build ], class: 'ui form') do |form| %>
+  <div class="ui field">
+    <%= form.label :commenter %><br>
+    <%= form.text_field :commenter %>
+  </div>
+  <div class="ui field">
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </div>
+  <p>
+    <%= form.submit 'Create Comment', class: 'ui primary button' %>
+  </p>
+<% end %>
