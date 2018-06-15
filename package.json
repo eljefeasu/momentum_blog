@@ -1,5 +1,14 @@
 {
   "name": "momentum_blog",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "babel-polyfill": "^6.26.0",
+    "jQuery": "^1.7.4",
+    "resolve-url-loader": "^2.3.0",
+    "semantic-ui-css": "^2.3.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
 }
