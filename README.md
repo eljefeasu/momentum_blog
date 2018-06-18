@@ -3,7 +3,7 @@
 This is a basic Rails 5.2 application meant to show how to use webpacker and
 yarn. The base application was built using the Rails Guide tutorial and the
 following steps below can be used to add webpacker/yarn functionality in
-addition to adding `semantic-ui-sass` and `jQuery`
+addition to adding `semantic-ui-css` and `jQuery`
 
 ### Steps to add Webpacker/Yarn
 
