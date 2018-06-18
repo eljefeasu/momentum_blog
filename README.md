@@ -32,24 +32,25 @@ addition to adding `semantic-ui-css` and `jQuery`
   pretty slow.
   - Alternative would be to use the foreman gem, but it makes debugging kind
   of difficult.
-10. `yarn add semantic-ui-css`
+10. Initialize yarn `yarn init`
+11. `yarn add semantic-ui-css`
   - Check to be sure it added to `package.json`
   - Add `import 'semantic-ui-css';` to `app/client/packs/application.js`
   - Add `@import '~semantic-ui-css/semantic';` to `app/client/packs/style.scss`
-11. `yarn add resolve-url-loader`
+12. `yarn add resolve-url-loader`
   - Since `Sass/libsass` does not provide url rewriting, all linked assets must
   be relative to the output. Add the missing url rewriting using the
   resolve-url-loader.
   - More information [here](https://github.com/aganov/webpacker/blob/47eeb36970cbaaa04d4e4507e2a2bcd26e0c1e2f/docs/css.md#resolve-url-loader)
-12. `yarn add jquery`
+13. `yarn add jquery`
   - Add to `app/client/packs/application.js`
     * `import jQuery from 'jquery';`
     * `window.jQuery = jQuery;`
     * `window.$ = jQuery;`
-13. `yarn add babel-polyfill`
+14. `yarn add babel-polyfill`
   - Add to `app/client/packs/application.js`
     * `import 'babel-polyfill';`
-14. Modify `config/webpack/environment.js`
+15. Modify `config/webpack/environment.js`
 
 ```
 const { environment } = require('@rails/webpacker');
