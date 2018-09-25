@@ -47,9 +47,6 @@ addition to adding `semantic-ui-css` and `jQuery`
     * `import jQuery from 'jquery';`
     * `window.jQuery = jQuery;`
     * `window.$ = jQuery;`
-14. `yarn add babel-polyfill`
-  - Add to `app/client/packs/application.js`
-    * `import 'babel-polyfill';`
 15. Modify `config/webpack/environment.js`
 
 ```
@@ -58,10 +55,7 @@ const webpack = require('webpack');
 
 // resolve-url-loader must be used before sass-loader
 environment.loaders.get('sass').use.splice(-1, 0, {
-  loader: 'resolve-url-loader',
-  options: {
-    attempts: 1
-  }
+  loader: 'resolve-url-loader'
 });
 
 // Add an ProvidePlugin
